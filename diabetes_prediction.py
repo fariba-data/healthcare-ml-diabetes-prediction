@@ -46,3 +46,17 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 print("Accuracy:", accuracy)
+from sklearn.ensemble import RandomForestClassifier
+
+# Create and train Random Forest model
+rf_model = RandomForestClassifier()
+
+rf_model.fit(X_train, y_train)
+
+# Prediction
+rf_pred = rf_model.predict(X_test)
+
+# Evaluate the model
+rf_accuracy = accuracy_score(y_test, rf_pred)
+
+print("Random Forest Accuracy:", rf_accuracy)
