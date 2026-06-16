@@ -25,3 +25,8 @@ Public diabetes dataset containing healthcare-related features.
 
 ## Future Work
 In future work, this project can be extended using deep learning and medical imaging datasets such as mammography.
+## Results
+
+This project compares Logistic Regression and Random Forest models for diabetes prediction.
+
+Feature importance analysis was used to improve model interpretability and identify the most influential healthcare variables.
