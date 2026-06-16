@@ -60,3 +60,20 @@ rf_pred = rf_model.predict(X_test)
 rf_accuracy = accuracy_score(y_test, rf_pred)
 
 print("Random Forest Accuracy:", rf_accuracy)
+# Feature Importance (Explainability)
+
+importances = rf_model.feature_importances_
+
+feature_names = X.columns
+
+feature_importance_df = pd.DataFrame({
+    "Feature": feature_names,
+    "Importance": importances
+})
+
+feature_importance_df = feature_importance_df.sort_values(
+    by="Importance",
+    ascending=False
+)
+
+print(feature_importance_df)
