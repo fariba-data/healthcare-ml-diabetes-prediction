@@ -36,3 +36,11 @@ Feature importance analysis was used to improve model interpretability and ident
 - Pandas
 - NumPy
 - Scikit-learn
+## Author
+
+Fariba
+
+Research interests:
+- Machine Learning
+- Healthcare AI
+- Data Science
